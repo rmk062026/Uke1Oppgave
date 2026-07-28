@@ -2,6 +2,8 @@
 string codeTitle = "";
 string codeDescription = "";
 
+
+// TODO : Store title and desc in another way
 // Error codes
 //  Code 400
 string badRequestTitle = "400: Bad request";
