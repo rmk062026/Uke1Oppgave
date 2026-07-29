@@ -40,40 +40,40 @@ if (int.TryParse(input, out int code))
 {
 
     // Find matching HTTP status code
-    switch(code)
-        {
-            case 400:
-                codeTitle = badRequestTitle;
-                codeDescription = badRequestDesc;
+    switch (code)
+    {
+        case 400:
+            codeTitle = badRequestTitle;
+            codeDescription = badRequestDesc;
             break;
 
-            case 401:
-                codeTitle = unauthorizedTitle;
-                codeDescription = unauthorizedDesc;
+        case 401:
+            codeTitle = unauthorizedTitle;
+            codeDescription = unauthorizedDesc;
             break;
-            case 403:
-                codeTitle = forbiddenTitle;
-                codeDescription = forbiddenDesc;
+        case 403:
+            codeTitle = forbiddenTitle;
+            codeDescription = forbiddenDesc;
             break;
-            case 404:
-                codeTitle = notFoundTitle;
-                codeDescription = notFoundDesc;
+        case 404:
+            codeTitle = notFoundTitle;
+            codeDescription = notFoundDesc;
             break;
-            case 408:
-                codeTitle = requestTimeoutTitle;
-                codeDescription = requestTimeoutDesc;
+        case 408:
+            codeTitle = requestTimeoutTitle;
+            codeDescription = requestTimeoutDesc;
             break;
-            case 500:
-                codeTitle = internalServerErrorTitle;
-                codeDescription = internalServerErrorDesc;
+        case 500:
+            codeTitle = internalServerErrorTitle;
+            codeDescription = internalServerErrorDesc;
             break;
-            default:
-                codeTitle = "Code not found.";
-                codeDescription = "Use 400, 401, 403, 404, 408 and 500.";
+        default:
+            codeTitle = "Code not found.";
+            codeDescription = "Use 400, 401, 403, 404, 408 and 500.";
             break;
-}
-Console.WriteLine($"HTTP Code: {codeTitle}");
-Console.WriteLine($"Description: {codeDescription}");
+    }
+    Console.WriteLine($"HTTP Code: {codeTitle}");
+    Console.WriteLine($"Description: {codeDescription}");
 }
 else
 {
